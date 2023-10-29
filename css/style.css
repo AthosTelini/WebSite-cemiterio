@@ -133,6 +133,7 @@ nav ul a.nav-link {
 
 }
 #id_carrossel{
+    
     text-align: center;
     background-color: var(--cor5);
 }
@@ -150,9 +151,82 @@ nav ul a.nav-link {
 
 }
 .carousel {
-    margin: 0 auto; /* Centraliza horizontalmente */
-    
-    max-width: 1280px; /* Largura máxima desejada */
-    max-height: 720px; /* Altura máxima desejada */
+    margin: 0 auto; 
+    max-width: 1200px; 
+    max-height: 720px; 
     
 }
+#id_pessoas h3{
+    text-align: center;
+}
+#id_pessoas p{
+    text-align: left;
+    margin: auto 300px;
+    margin-bottom: 20px;
+   
+}
+
+/*cards -maria-jose-walter*/
+.containerPessoa {
+    display: flex;
+    justify-content: center;
+}
+
+.cardPessoa {
+    display: flex; 
+    align-items: center;
+    border-radius: 15px;
+    margin: 15px 300px;
+    background-color: var(--cor4);
+    box-shadow: rgba(0, 0, 0, 0.35) ;
+}
+
+.fotoPessoa {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 80px 25px;
+}
+
+.titulo {
+    text-align: left;
+    margin: 15px;
+    color: var(--cor1);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.descricao {
+    color: var(--cor1);
+    font-weight: 200;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.cards .card {
+    background-color:var(--cor1);
+    cursor: pointer;
+    transition: transform 400ms, filter 400ms;
+}
+
+
+.cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.cards .card p.second-text {
+    font-size: .7em;
+}
+
+.cards .card:hover {
+    transform: scale(1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9);
+}
+/*fim dos card das pessoas*/
+
+
