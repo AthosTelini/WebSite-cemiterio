@@ -34,7 +34,7 @@ p{
     padding: 0 5%;
 }
 .btn {
-    background-color:var(--cor4);
+    background-color:var(--cor5);
     color:var(--cor2);
     padding: 15px 20px;
     border-radius: 20px;
@@ -42,7 +42,7 @@ p{
     transition: 0.2s;
 }
 .btn:hover {
-    background-color: var(--cor5);
+    background-color: var(--cor2);
 }
 header{
     background-position: center;
@@ -254,7 +254,7 @@ nav ul a.nav-link {
     justify-content: center;
 }
 .cartao{
-    margin: 50px;
+    margin: 50px 40px;
     width: 250px;
     height: 250px;
     position: relative;
@@ -282,7 +282,7 @@ nav ul a.nav-link {
     padding: 20px;
     box-sizing: border-box;
     border-radius: 5px;
-     box-shadow: rgba(100, 100, 111, 0.5) 0px 2px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 2px 29px 0px;
 }
 
 .frente {
@@ -292,7 +292,7 @@ nav ul a.nav-link {
     margin-bottom: 15px;
     text-align: center;
     align-items: center;
-    color: var(--cor1);
+    color: var(--cor5);
     
 }
 .tras{
@@ -305,10 +305,66 @@ nav ul a.nav-link {
     align-items: center;
     margin: 5px;
     font-size: 18px ;
-    color: var(--cor1);
+    color: var(--cor5);
     
 }
+/* contatos */
 
+.contatos{
+    position: relative;
+    min-width: 100vh;
+    padding: 5px 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container-info .contatos-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container-info .contatos-info .box{
+    position: relative;
+    padding: 20px 0px;
+    display: flex;
+}
+.container-info .contatos-info .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container-info .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: var(--cor3);
+    flex-direction: column;
+    font-weight: 300;
+}
+.container-info .text  p{
+    font-weight: 500;
+    color: var(--cor5);
+}
+.mapa{
+    border-radius: 5px;
+    box-shadow: #344c5b6b 0px 1px 15px 0px;
+}
+
+
+/* fim contatos */
 
 
  
