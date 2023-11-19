@@ -443,8 +443,9 @@ nav .close-icon{
  nav .close-icon{
     display: block;
     position: absolute;
-    top: 46px;
-    right: 18px;
+    top: 42px;
+    right: 40px;
+
 
  }
  /* banner */
@@ -476,8 +477,6 @@ nav .close-icon{
  .historia .historia-text h3{
     margin-bottom: 15px;
     font-size: 50px;
-   
-   
  }
  .container{
     display: flex;
@@ -522,7 +521,6 @@ nav .close-icon{
     
 }
 
-/*  */
 .containerPessoa{
     display: flex;
     justify-content: center;
@@ -571,8 +569,34 @@ nav .close-icon{
     
 }
 /* Cards serviços */
-
-
+#id_servicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.servicos-titulo{
+    display: flex;
+    justify-content: center;
+}
+/* contatos */
+#id_contatos{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+.container-info .contatos-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 90px;
 }
 
+.mapa iframe {
+    top: 0;
+    left: 0;
+    width: 380px;
+    height: 550px;
+}
+}
  
