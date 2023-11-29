@@ -28,8 +28,10 @@ h3{
 p{
     color: black;
 }
+
 .container{
     max-width: 1400px;
+    height: auto;
     margin: 0 auto;
     padding: 0 5%;
 }
@@ -84,8 +86,14 @@ nav ul a:hover::after{
 nav ul a.nav-link {
     text-decoration: none;
 }
+.img-header{
+    margin-right: 180px;
+}
+#link_contato{
+    display: none;
+}
 /* Menu mobile */
-nav .menu-icon{
+/* nav .menu-icon{
     color: white;
     cursor: pointer;
     font-size: 35px;
@@ -95,13 +103,19 @@ nav .close-icon{
     color: white;
     cursor: pointer;
     font-size: 35px;
-}
-.banner{
+} */
+.container-inicio{
+    max-width: 1400px;
+    height: 900px;
+    margin: 0 auto;
+    padding: 0 5%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
 .banner .banner-text{
-    margin: 50px;
+    margin-top: 200px;
     text-align: center;
     padding: 0 90px;
     
@@ -140,9 +154,6 @@ nav .close-icon{
     width: 125px;
     margin: 5px;
     border-radius: 4px;
-    
-    
-
 }
 .estatua img{
     display: none;
@@ -326,12 +337,14 @@ nav .close-icon{
 
 .contatos{
     position: relative;
-    min-width: 100vh;
-    padding: 5px 250px;
+    min-width: 100;
+    padding: 5px;
+    margin-right: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 .container-info{
     width: 100%;
@@ -413,47 +426,13 @@ nav .close-icon{
 
     /* Responsividade */
 @media(max-width:830px){
-    .ul{
-        position: fixed;
-        left: 0;
-        top: 0;
-        background-color:var(--cor5);
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        clip-path: circle(0.0% at 100% 0);
-        transition: 0.7s;
-    }
-    .ul.open{
-        clip-path: circle(141.2% at 100% 0);
-    }
-    .ul a{
-        margin: 10px 0;
-        font-size: 16px;
-    }
- .menu-icon{
-    display: block;
- }
- nav .close-icon{
-    display: block;
-    position: absolute;
-    top: 42px;
-    right: 40px;
-
-
- }
- /* banner */
- .banner .banner-text{
-    margin: 120px;
-    text-align: center;
-    padding: 0 90px;
-    
+nav ul a{
+    margin: 0 15px;
+}   
+.img-header{
+    margin-right: 0px;
 }
-
- .banner .banner-text h1{
+.banner .banner-text h1{
     font-size: 65px;
     /* white-space: nowrap;  */
     overflow-wrap: break-word;
@@ -467,7 +446,7 @@ nav .close-icon{
 }
  /* Historia */
 
-.historia .historia-text p{
+ .historia .historia-text p{
     margin: 5px 0 10px 0;
     font-size: 18px;
 }
@@ -586,6 +565,7 @@ nav .close-icon{
     display: flex;
     flex-direction: column;
     margin-right: 90px;
+    margin-left: 155px;
 }
 
 .mapa iframe {
@@ -595,35 +575,103 @@ nav .close-icon{
     height: 550px;
 }
 }
-@media(max-width:480px){
+@media(max-width:500px){
+    .btn {
+        display: none;
+    }
+    
+    #link_contato {
+        display: block;
+    }
+    
+    nav {
+        display: grid;
+        padding-top: 30px;
+    }
+    
+    .img-header {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        padding: 10px; 
+    }
+    
+    nav ul a {
+        color: aliceblue;
+        margin: 0 2px;
+        padding: 5px;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
     /* banner */
-    .banner .banner-text h1{
-        font-size: 80px;
+    .banner {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        height: 100vh; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner .banner-text {
+        text-align: center; 
+        padding: 20px; 
+        margin-bottom: 250px;
+    }
+
+    .banner .banner-text h1 {
+        font-size: 50px;
         max-width: 100%;
+        margin: 0;
     }
     
     .banner .banner-text p{
-        font-size: 14px;
+        font-size: 12px;
         color: #ffffffb7;
         font-weight: lighter;
         margin: 18px 0 ;
     }
-    #id_historia .historia-img .estatua{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin:  15px 10%;
-    display: block;
-    height: 150px;
+    /*  historia */
+    #id_historia h3{
+    font-size: 30px;
+    margin-bottom: 30px;
     }
+    #id_historia p{
+    font-size: 13px;
+    
+    }
+    #id_historia .historia-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        
+    }
+    #id_historia .historia-img .estatua{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:  5px;
+        display: block;
+        height: 200px;
+    }
+    
+    
     /* carrosel */
     #id_carrossel{
-        height: 450PX;
+        height: 400PX;
     }
     .carousel {
         margin: 0 auto; 
-        max-width: 420px; 
+        max-width: 320px; 
         
     }
     .imagens-do-local{
@@ -638,13 +686,18 @@ nav .close-icon{
         display: flex;    
         justify-content: center;
     }
+    #id_pessoas .paragrafo-pessoas-relevantes {
+        margin: 15px 35px;
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
     .cardPessoa{
         display: flex;
         flex-direction: column;
         margin: 25px 0px;
         margin-bottom: 50px;
-        width: 350px;
-        padding: 25px;
+        width: 300px;
+        padding: 15px;
         height: auto;
         justify-content: center;
         
@@ -652,28 +705,26 @@ nav .close-icon{
     .imagemCard{
         display: flex;
         justify-content: center;
-        align-items: baseline;
-        height: 200px;
-        width: 200px;
+        align-items: center;
+        height: 50px;
+        width: 100px;
     }
 
     .fotoPessoa {
-        display: flex;
-        margin-top: 10px;
-        align-items: flex-start;
-        justify-content: center;
-        height: 200px;
-        width: 200px;
+        height: 125px;
+        width: 125px;
         border-radius: 50%;
     }
 
     .titulo {
         text-align: center;
+        margin: 0px;
+        padding: 0px;
     }
-    #id_pessoas p {
-        margin: 0px auto;
+    #id_pessoas .descricao p {
+        margin: 10px auto;
         text-align: justify;
-        font-size: 15px;
+        font-size: 13px;
     }
     /* card serviços */
     #id_servicos{
@@ -685,53 +736,67 @@ nav .close-icon{
         text-align: center;
     }
     #id_servicos .servicos-titulo h3{
-        font-size: 40px;
+        font-size: 50px;
         margin-bottom: 30px;
     }
+    .cartaoContainer {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        
+    }
     .cartao {
-        margin: 20px 40px;
-        width: 200px;
-        height: 200px;
+        margin: 5px;
+        width: 150px;
+        height: 150px;
         position: relative;
         perspective: 1000px;
+      }
+      .frente img{
+        width: 80px;
       }
       .tras p {
         text-align: center;
         align-items: center;
         margin: 5px;
-        font-size: 15px;
+        font-size: 10px;
         color: var(--cor5);
       }
+   
       /* Contatos */
       #id_contatos{
         padding-bottom: 0px;
       }
-   
+    .titulo-contatos{
+        margin-left: 130px;
+        font-size: 60px;
+    }
     .container-info {
-        width: 100%;
+        width: 90%;
         display: grid;
         grid-template-columns: 1fr;
     }
     .container-info .contatos-info {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-left: 93px;
-        gap: 25px;
+        grid-template-columns: 1fr;
+        margin-left: 200px;
+        gap: 15px;
       }
-      
       .container-info .contatos-info .box .icon{
         min-width: 40px;
         height: 40px;
         font-size: 14px;
+        
     }
     .container-info .text{
         width: 150px;
         font-size: 14px;
         font-weight: 300;
+        
     }
     .container-info .text  p{
         font-weight: 500;
         color: var(--cor5);
+        
     }
     .mapa {
         display: flex;
@@ -746,7 +811,9 @@ nav .close-icon{
     .mapa iframe {
         border-radius: 5px;
         box-shadow: #344c5b6b 0px 1px 15px 0px;
-        width: 380px;
+        
+        margin-left: 150px;
+        width: 300px;
         height: 350px;
     }
     /* footer */
@@ -776,5 +843,4 @@ nav .close-icon{
         color: black;
     }
     
-      
-}
+}      
