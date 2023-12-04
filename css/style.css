@@ -16,8 +16,12 @@
     --cor1: #DCDCDC;
 
 }
-body{
+
+body {
     background-color: var(--cor1);
+}
+header{
+    background-image: url('../img/background-homeCemiterio.jpg');
 }
 section,footer{
     padding: 54px 0;
@@ -138,6 +142,7 @@ nav .close-icon{
 .historia .historia-text{
     height: 50%;
     padding: 0 40px;
+    margin-bottom: 35px;
 }
 .historia .historia-text h3{
     margin-bottom: 50px;
@@ -333,6 +338,12 @@ nav .close-icon{
     color: var(--cor5);
     
 }
+/* fim cards serviços */
+/* Tabela de avisos */
+
+
+
+/* Fim Tabela de avisos */
 /* contatos */
 
 .contatos{
@@ -391,6 +402,7 @@ nav .close-icon{
 }
 
 /* fim contatos */
+
 /* footer */
 .footer {
     padding: 30px 0px;
@@ -426,7 +438,9 @@ nav .close-icon{
 
     /* Responsividade */
 @media(max-width:1400px){
-
+    .banner .banner-text h1{
+        font-size: 65px;
+    }
     .container-info .contatos-info{
         width: 50%;
         display: flex;
@@ -437,6 +451,9 @@ nav .close-icon{
 
 }
 @media(max-width:830px){
+    header{
+        background-image: url('../img/background02-homeCemiterio.jpg');
+    }
     nav ul a{
         margin: 0 15px;
     }   
@@ -587,6 +604,9 @@ nav .close-icon{
     }
 }
 @media(max-width:500px){
+    header{
+        background-image: url('../img/background02-homeCemiterio.jpg');
+    }
     .btn {
         display: none;
     }
@@ -753,6 +773,7 @@ nav .close-icon{
     .cartaoContainer {
         display: grid;
         grid-template-columns: 40% 40%;
+        gap: 5px;
         
     }
     .cartao {
