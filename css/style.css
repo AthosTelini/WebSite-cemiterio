@@ -96,18 +96,6 @@ nav ul a.nav-link {
 #link_contato{
     display: none;
 }
-/* Menu mobile */
-/* nav .menu-icon{
-    color: white;
-    cursor: pointer;
-    font-size: 35px;
-}
-nav .close-icon{
-    display: none;
-    color: white;
-    cursor: pointer;
-    font-size: 35px;
-} */
 .container-inicio{
     max-width: 1400px;
     height: 900px;
@@ -198,7 +186,6 @@ nav .close-icon{
     margin-bottom: 20px;
    
 }
-
 
 #id_pessoas .paragrafo-pessoas-relevantes{
     margin: 15px 300px;
@@ -341,6 +328,17 @@ nav .close-icon{
 /* fim cards serviços */
 /* Tabela de avisos */
 
+.project-actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0  300px;
+    
+}
+.project-actions h3{
+    margin: 30px;
+}
 
 
 /* Fim Tabela de avisos */
@@ -400,7 +398,6 @@ nav .close-icon{
     border-radius: 5px;
     box-shadow: #344c5b6b 0px 1px 15px 0px;
 }
-
 /* fim contatos */
 
 /* footer */
@@ -447,6 +444,13 @@ nav .close-icon{
         flex-direction: column;
         margin-right: 90px;
         margin-left: 155px;
+    }
+    .project-actions{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0  100px;
     }
 
 }
@@ -581,6 +585,22 @@ nav .close-icon{
         display: flex;
         justify-content: center;
     }
+    .project-actions{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0  auto;
+        
+    }
+    .project-actions{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0  auto;
+        
+    }
     /* contatos */
     #id_contatos{
         display: flex;
@@ -602,6 +622,7 @@ nav .close-icon{
         width: 380px;
         height: 550px;
     }
+
 }
 @media(max-width:500px){
     header{
@@ -793,7 +814,14 @@ nav .close-icon{
         font-size: 10px;
         color: var(--cor5);
       }
-   
+      .project-actions{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0  auto;
+        
+    }
       /* Contatos */
       #id_contatos{
         padding-bottom: 0px;
